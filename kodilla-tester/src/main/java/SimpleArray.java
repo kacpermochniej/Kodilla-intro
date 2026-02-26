@@ -1,28 +1,16 @@
-public class FirstClass {
+public class SimpleArray {
     public static void main(String[] args) {
-        Notebook macbook = new Notebook(1100, 2500, 2024);
-        Notebook oldie = new Notebook(2500, 500, 2012);
-        Notebook acer = new Notebook(1800, 900, 2019);
-        Notebook lenovo = new Notebook(2200, 1500, 2021);
 
-        System.out.println("--- MacBook ---");
-        macbook.checkPrice();
-        macbook.checkWeight();
-        macbook.checkYearAndPrice();
+        String[] movies = new String[] {
+                "Skazani na Shawshank",
+                "Forrest Gump",
+                "Matrix",
+                "Król Lew",
+                "Gladiator"
+        };
 
-        System.out.println("\n--- Oldie Laptop ---");
-        oldie.checkPrice();
-        oldie.checkWeight();
-        oldie.checkYearAndPrice();
+        int numberOfElements = movies.length;
 
-        System.out.println("\n--- Acer ---");
-        acer.checkPrice();
-        acer.checkWeight();
-        acer.checkYearAndPrice();
-
-        System.out.println("\n--- Lenovo ---");
-        lenovo.checkPrice();
-        lenovo.checkWeight();
-        lenovo.checkYearAndPrice();
+        System.out.println("My array contains " + numberOfElements + " elements.");
     }
 }
